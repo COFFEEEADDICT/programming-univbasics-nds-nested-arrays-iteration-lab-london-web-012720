@@ -1,25 +1,95 @@
 def join_ingredients(src)
-  # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
-  #
-  # Build a new Array that contains strings where each pair of foods is
-  # inserted into this template:
-  #
-  # "I love (inner array element 0) and (inner array element 1) on my pizza""
-  # As such, there should be a new String for each inner array, or pair
+
+bigarr= []
+endd=[]
+row_index = 0
+
+while row_index < src.count do
+    element_index = 0
+    part1 = "I love #{src[row_index][element_index]}"
+      while element_index < src[row_index].count do
+        part2 = " and #{src[row_index][element_index]} on my pizza"
+        element_index += 1
+      end
+  bigarr << part1 + part2
+   row_index += 1
 end
+endd = bigarr
+return endd
+end
+
 
 def find_greater_pair(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # Produce a new Array that contains the larger number of each of the pairs
-  # that are in the inner Arrays
+
+part1 = []
+bigarr= []
+endd=[]
+row_index = 0
+
+while row_index < src.count do
+    element_index = 0
+    part1 = src[row_index].max
+    p src[row_index]
+    bigarr << part1
+    row_index += 1
+end
+endd = bigarr
+return endd
 end
 
+
+# def total_even_pairs(src)
+# summ = []
+# endd=[]
+# row = 0
+# row2=0
+# final= []
+#
+#       while row < src.count do
+#       summ << src[row].sum
+#       row += 1
+#       end
+#
+#
+#       while row2 < summ.count do
+#         summ[row2].even?
+#         p summ
+#         if summ[row2].even?
+#         final << summ[row2]
+#         else
+#         end
+#        row2 += 1
+#       end
+# final = final.sum
+# return final
+#
+# end
+
+
 def total_even_pairs(src)
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # if both numbers in the pair are even, then add both those numbers to the
-  # total
-  #
-  # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
-  # the number was even. Review the operator documentation if you've forgotten
-  # this!
-end
+summ = []
+endd=[]
+row = 0
+row2=0
+final= []
+bignum=0
+c1=0
+c2=1
+passs=[]
+testt = []
+testt2 = []
+c3=0
+      while c1 < src.count do #check number 1
+
+        if src[c1][c3].even? && src[c1][c2].even?
+          testt << src[c1][c3] + src[c1][c2]
+p testt
+          testt.sum
+         end
+
+        c1 += 1
+
+
+        end
+        testt
+  end
