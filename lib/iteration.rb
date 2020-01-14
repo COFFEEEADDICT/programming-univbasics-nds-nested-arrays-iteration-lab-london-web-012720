@@ -46,16 +46,16 @@ c1=0
 c2=1
 c3=0
       while c1 < src.count do #for the lenght check each src[i][i]
-        
+
         if src[c1][c3].even? && src[c1][c2].even?
           testt += src[c1]
-          
+
          end
           c1 += 1
-          
+
         end
-        
+
 
     return testt.sum
-        
+
  end 
