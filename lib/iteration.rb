@@ -38,32 +38,6 @@ return endd
 end
 
 
-# def total_even_pairs(src)
-# summ = []
-# endd=[]
-# row = 0
-# row2=0
-# final= []
-#
-#       while row < src.count do
-#       summ << src[row].sum
-#       row += 1
-#       end
-#
-#
-#       while row2 < summ.count do
-#         summ[row2].even?
-#         p summ
-#         if summ[row2].even?
-#         final << summ[row2]
-#         else
-#         end
-#        row2 += 1
-#       end
-# final = final.sum
-# return final
-#
-# end
 
 
 def total_even_pairs(src)
